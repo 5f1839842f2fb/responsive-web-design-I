@@ -71,12 +71,10 @@ body{
 }
 #stickynav {
 	background-color: white;
-	border: solid black;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
-	max-width: inherit;
-	min-width: ; 
+	width: 90%;
 	
 }
 ul{
@@ -161,7 +159,8 @@ span {
 }
 .copyright{
 	font-size: 13px;
-	margin: 50px 41%;
+	text-align: center;
+	margin: 50px auto;
 }
 .services-header {
 	padding-top: 50px;
@@ -169,6 +168,18 @@ span {
 @media only screen and (max-width: 800px) {
 	body {
 		max-width: 90%;
+	}
+	#stickynav {
+		flex-direction: column;
+		align-items: center;
+		align-content: space-between;
+	}
+	ul {
+		width: 100%;
+	}
+	.logo {
+		order: -1;
+		padding: 3% 0;
 	}
 	.middle-img {
 		max-width: 100%;
