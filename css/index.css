@@ -66,20 +66,22 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body{
 	max-width: 876px;
-	margin: 0 5%;
+	margin: 0 auto;
 	margin-top: 2%;
+	display: flex;
+	flex-direction: column;
 }
 #stickynav {
 	background-color: white;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
-	width: 90%;
-	
+	width: 100%;
+	max-width: 876px;
 }
 ul{
 	display: flex;
-	width: 70%;
+	width: 90%;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -173,6 +175,7 @@ span {
 		flex-direction: column;
 		align-items: center;
 		align-content: space-between;
+		max-width: 90%;
 	}
 	ul {
 		width: 100%;
@@ -190,4 +193,33 @@ span {
 }
 @media only screen and (max-width: 500px) {
 	
+	ul {
+		flex-direction: column;
+	}
+	ul a {
+		padding: 3% 0;
+		border-bottom: 1px solid black;
+		width: 80%;
+	}
+	.logo {
+		border-bottom: 1px solid black;
+
+	}
+	header {
+		margin-top: 60%;
+	}
+	.top-paragraphs {
+		flex-direction: column;
+	}
+	.split-paragraphs {
+		width: 98%;
+		margin: 2% 0;
+	}
+	.bottom-paragraphs {
+		flex-direction: column;
+	}
+	.triple-split-paragraphs {
+		width: 98%;
+		margin: 2% 0;
+	}
 }
